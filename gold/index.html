@@ -1,119 +1,144 @@
 <!DOCTYPE html>
 <!-- Matthew Richter, Project 2 for MIU 1205 Full Sail University  -->
 <!-- May 7, 1212 -->
-<!-- HTML TAG -->
+<!-- HTML TAG --> 
 <html lang="en">
-	<!-- Document Header -->
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="description" content="A BBTmobi.com app to help contractors be more profitable and organized." />
-		<meta name="keywords" content="construction, planning, organization, more profits, guide" />
-		<!-- allows search engine robots to index our page in a search engine and follow (continue reading through) links on our page. -->
-		<meta name= "robots" content="index, follow" />
-		<!-- Mobile IE needs ClearType for smoothing fonts -->
-		<meta http-equiv="cleartype" content="on">
-		<!-- Allows our content to size correctly to an iphone display -->
-		<!-- Viewport tells the browser to allow the user to scale the content and how wide it should assume the content woll be displayed (i.e. a full 960 or 		the width of the device ) -->
-		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-		<meta name="HandheldFriendly" content="True"/>
-		<meta name="MobileOptimized" content="320"/>
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
-		<!-- Document Title  -->
-		<title>BBTmobi.com - Job Genie</title>
-		<!-- Import our CSS Styles -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-		<link href= "css/style.css" rel= "stylesheet" type="text/css"/>
-		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/libs/modernizr.custom.min.js"></script>
-	</head>
-	<!-- Document Body -->
-	<body>
-		<div data-role="page" id="home">
+<head>
+	<!-- Document Title  -->
+	<title>BBTmobi.com - Job Genie</title>
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	<meta name="description" content="A BBTmobi.com app to help contractors be more profitable and organized." />
+	<meta name="keywords" content="construction, planning, organization, more profits, guide" />
+	<!-- allows search engine robots to index our page in a search engine and follow (continue reading through) links on our page. -->
+	<meta name= "robots" content="index, follow" />
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href= "css/style.css" rel= "stylesheet" type="text/css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<!-- home page -->
+	<div data-role="page" id="home">
 		<div data-role="header" data-position="fixed">
-			<h1>Joe Genie</h1>	
+			<h1>Joe Genie</h1>
 		</div>
-		<h6>Helping you organize projects & profitability.</h6>
-			<!-- Call to Action -->
-		<div data-role="content" data-inset="true">
-			<div id="CTA">
-				<img src="images/cta3.png" border="0" usemap="#Map"/>
-				<map name="Map">
-					<area shape="rect" coords="247,121,458,157" href="addProject.html">
-				</map>
-			</div>
-		</div>
-			<div data-role="content">
-			<p><a href="#addProject" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e" >Create a new project now!</a></p>
+		<div data-role="content">
+			<img src="images/cta3.png" border="0" usemap="#Map"/>
+			<map name="Map">
+				<area shape="rect" coords="200,121,388,157" href="addProject.html">
+			</map>
 		</div>
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true">
 				<li>
-					<a href="under.html">
-						<h3>Lavatories</h3>
-						<p>bathrooms, vanities, tile showers, fixtures</p>
-					</a></li>
-				<li>
-					<a>
+					<a href="#additions">
+						<img src="images/a.png"/>
 						<h3>Additions</h3>
 						<p>cap to colonial, master bedroom, second story</p>
 					</a></li>
 				<li>
-					<a>
-						<h3>Roofs</h3>
-						<p>weather shielding, turrets, slate</p>
-					</a></li>
+					<a href="#basements">
+						<img src="images/b.png"/>
+						<h3>Basements</h3>
+						<p>game room, extra kitchen, wine cellar, man cave</p>
+					</a></li>	
 				<li>
-					<a>
+					<a href="#kitchens">
+						<img src="images/k.png"/>
 						<h3>Kitchens</h3>
 						<p>cabinets, tile back splash, custom islands, counter tops</p>
 					</a></li>
 				<li>
-					<a>
-						<h3>Basements</h3>
-						<p>game room, extra kitchen, wine cellar, man cave</p>
-					</a></li>	
+					<a href="#lavatories">
+						<img src="images/l.png"/>
+						<h3>Lavatories</h3>
+						<p>bathrooms, vanities, tile showers, fixtures</p>
+					</a></li>
+				<li>
+					<a href="#roofs">
+						<img src="images/r.png"/>
+						<h3>Roofs</h3>
+						<p>weather shielding, turrets, slate</p>
+					</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			<h4>Footer</h4>
 		</div>
+	</div>
+	<!-- additions page -->
+	<div data-role="page" id="additions" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Additions</h1>
 		</div>
-		<!-- search --> 
-		<div id="Search">
-			<img src="images/search.png"/>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
 		</div>
-		<!-- browse --> 
-		<div id="browse title" border="0">
-			<h4>Browse project categories:</h4>	
+	</div>
+	<!-- basements page -->
+	<div data-role="page" id="basements" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Basements</h1>
 		</div>
-		<!-- I will use h5 when we use JQM - I didn't want the CSS to break so I used images --> 
-		<!-- I will also create additional divs for each category if need be--> 
-		<!-- H5 and the divs contained in it will be my title sections -->
-		<h5>
-			<div id="Categorie1" border="0" >
-				<img src="images/additions.png" border="0"/>
-			</div>
-			<div id="Categorie2" border="0" >	
-				<img src="images/kitchens.png" border="0"/>
-			</div>
-			<div id="Categorie3" border="0" >	
-				<img src="images/lavatories.png" border="0"/>
-			</div>
-			<div id="Categorie4" border="0" >	
-				<img src="images/roofs.png" border="0"/>
-			</div>
-			<div id="Categorie5" border="0" >	
-				<img src="images/basements.png" border="0"/>
-			</div>
-		</h5> 
-		<!-- Footer Group --> 
-		<footer>
-			<p><small> &copy; 2012 BBTmobi.com All Rights Reserved.</small></p>
-		</footer>
-		<!-- JavaScript under here -->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-		<script src="js/json.js" type="text/javascript"></script>
-		<script src="js/main.js" type="text/javascript"></script>	
-	</body>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<!-- kitchens page -->
+	<div data-role="page" id="kitchens" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Kitchens</h1>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<!-- lavatories page -->
+	<div data-role="page" id="lavatories" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Lavatories</h1>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+	<!-- roofs page -->
+	<div data-role="page" id="roofs" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Roofs</h1>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+
+	
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
 </html>
