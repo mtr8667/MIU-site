@@ -1,7 +1,7 @@
 // Matthew RIchter 
 // MIU - Full Sail University
-// Project 1
-// April 29, 2012
+// Project 
+// May 7, 2012
 // Wait until the DOM is ready 	
 window.addEventListener("DOMContentLoaded", function(){	
 	// getElementById function

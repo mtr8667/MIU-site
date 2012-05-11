@@ -1,19 +1,10 @@
 /*
-Project 1
+Project 2
 MIU 1205
-April 29, 2012
+May 7, 2012
 Matthew Richter
 */
-body {font-family:Arial, Helvetica, san-serif; width: 480px; margin: 0px 0px 0px 0px;padding: 0px; 
-background: -moz-linear-gradient(top, #ffffff 0%, #FEFFED 50%, #ffffff 100%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#FEFFED), color-stop(100%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #ffffff 0%,#FEFFED 50%,#ffffff 100%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #ffffff 0%,#FEFFED 50%,#ffffff 100%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #ffffff 0%,#FEFFED 50%,#ffffff 100%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(top, #ffffff 0%,#FEFFED 50%,#ffffff 100%,#ffffff 100%); /* W3C */
-background-size: 480px 690px;
-}
-h1	{
+h2	{
 	margin: 0px 0px 5px 0px;
 	border: 0px solid #287613;
 	padding: 5px 30px 5px 30px;
@@ -25,23 +16,6 @@ h1	{
 	font-family: Helvetica ;
 	text-align: center;
 }
-h2 {
-	margin: 5px 5px 5px 5px;
-	color: #3d3d3d;
-}
-h3 {
-	font-weight: 600;
-	text-shadow: 3px 3px #ffffff;
-	color: #848484;
-	margin: 0px 0px 0px 160px;
-}
-h4 {
-	font-weight: 600;
-	text-shadow: 3px 3px #ffffff;
-	color: #848484;
-	margin: 0px 0px 0px 135px;
-	padding: 0px;
-}
 a {
 	color: #146936;		
 }
@@ -49,8 +23,12 @@ a:hover {
 	color:#146936; 
 	opacity: 0.6;
 }
+div#back {
+	margin: 0px 0px 2px 215px;
+}
 nav {
-	margin: 1px 126px 1px 10px;}
+	margin: 1px 126px 1px 10px;
+}
 p{
 	color:#848484 ;
 	font-family: Verdana ;
