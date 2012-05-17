@@ -36,13 +36,13 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
-		<div id="cta">
-			<a href="#form" >
+		<div>
+			<a href="#newproject" >
 				<img src="images/cta3.png"/>
 			</a>	
 		</div>
 		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-inset="true">
+			<ul data-role="listview" data-filter="true" data-inset="true" data-mini="true">
 				<li>
 					<a href="#additions">
 						<img src="images/a.png"/>
@@ -86,15 +86,15 @@
 		</div>
 	</div>
 	<!-- form page -->
-	<div data-role="page" id="form" data-ajax="true" data-add-back-btn="true">
+	<div data-role="page" id="newproject" data-ajax="true" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" >
 			<h1>New Project</h1>
 		</div>
 		<div data-role="content">
-			<form action="" method="post" id="newprojectform">
-				<div data-role="fieldcontain">
-					<label for="project-type">Project type:</label>
-					<select name="project-type" id="project-type" data-native-menu="false" class="required">
+			<form action="" method="post" id="jobform">
+				<div data-role="fieldcontain" >
+					<label for="project-type" >Project type:</label>
+					<select name="project-type" id="project-type" data-native-menu="false" class="required" data-mini="true">
 						<option data-place-holder="true" value>Please select a project type.</option>
 						<optgroup>
 							<option value="addition">Addition</option>
@@ -105,43 +105,45 @@
 						</optgroup>
 					</select>
 				</div>
-				<label for="projectname">Job Name:</label>
-				<input type="text" name="projectname" id="projectname"/>
+				<label for="projectname" >Job Name:</label>
+				<input type="text" name="jobname" id="jobname" data-mini="true" class="required"/>
 				<label for="firstname">First Name:</label>
-				<input type="text" name="firstname" id="firstname"/>
+				<input type="text" name="firstname" id="firstname" data-mini="true" class="required"/>
 				<label for="lastname">Last Name:</label>
-				<input type="text" name="lastname" id="lastname"/>
+				<input type="text" name="lastname" id="lastname" data-mini="true" class="required"/>
 				<label for="email">Email:</label>
-				<input type="email" name="email" id="email"/>
+				<input type="email" name="email" id="email" data-mini="true" class="required"/>
 				<label for="phone">Phone:</label>
-				<input type="phone" name="phone" id="phone"/>
+				<input type="phone" name="phone" id="phone" data-mini="true" class="required"/>
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date" data-mini="true" class="required"/>
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Contact via email?</legend>
-						<input type="checkbox" value="emailokay" name="emailokay" id="cost-1"/>
-						<label for="cost-1">Yes</label>
+						<input type="checkbox" value="emailokay" name="emailokay" id="email-1" data-mini="true"/>
+						<label for="email-1">Yes</label>
 					</fieldset>
 				</div>
 				<label for="priority">Project Priority:</label>
-				<input type="range" name="priority" id="priority" value="5" min="0" max="10"/>
+				<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Cost per square foot</legend>
-						<input type="radio" value="High" name="cost" id="cost-1"/>
+						<input type="radio" value="High" name="cost" id="cost-1" data-mini="true"/>
 						<label for="cost-1">High</label>
-						<input type="radio" value="Medium" name="cost" id="cost-1"/>
-						<label for="cost-1">Medium</label>
-						<input type="radio" value="Low" name="cost" id="cost-1"/>
-						<label for="cost-1">Low</label>
+						<input type="radio" value="Medium" name="cost" id="cost-2" data-mini="true"/>
+						<label for="cost-2">Medium</label>
+						<input type="radio" value="Low" name="cost" id="cost-3" data-mini="true"/>
+						<label for="cost-3">Low</label>
 					</fieldset>
 				</div>
 				<div data-role="fieldcontain">	
 					<label for="notes">Job Notes:</label>
-					<textarea></textarea>
+					<textarea data-mini="true"></textarea>
 				</div>
-				<input type="reset" value="reset"/>
-				<input type="submit" value="Create Project" data-theme="e"/>	
-				<a href="#project-type-error" id="error-project-type" data-rel="dialog" data-transition="pop">Open errors</a>			
+				<input type="reset" value="Clear Form" data-mini="true"/>
+				<input type="submit" value="Save Project" data-theme="e" />	
+				<a href="#showerrors" id="errorlink" data-rel="dialog" data-transition="pop">Open errors</a>			
 			</form>
 		</div>	
 	</div>		
@@ -291,20 +293,20 @@
 		</div>
 	</div>	
 	<!-- project-type-error-message -->
-	<div data-role="dialog" id="project-type-error">
+	<div data-role="dialog" id="showerrors">
 		<div data-role="header" data-position="fixed" >
 			<h1>Missing field!</h1>
 		</div>
 		<div data-role="content">
 			<ul>
-				<li>test</li>
+				<li>test again</li>
 			</ul>
 		</div>
 	</div>	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-	<script src="js/json.js" type="text/javascript"></script>
+	<script type="text/javascript" scr="js/libs/jquery.validate.min.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
 </body>
 </html>
