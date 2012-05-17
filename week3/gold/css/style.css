@@ -5,3 +5,6 @@ April 29, 2012
 Matthew Richter
 */
 
+label.error{display:block; margin:10px 0; color:#cc0000;}
+
+#error-project-type{display:none;}

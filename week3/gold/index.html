@@ -105,28 +105,43 @@
 						</optgroup>
 					</select>
 				</div>
-				<label for="projectname">Project Name:</label>
+				<label for="projectname">Job Name:</label>
 				<input type="text" name="projectname" id="projectname"/>
 				<label for="firstname">First Name:</label>
 				<input type="text" name="firstname" id="firstname"/>
 				<label for="lastname">Last Name:</label>
 				<input type="text" name="lastname" id="lastname"/>
-				<div data-role="fieldcontain">	
-					<label for="emailokay">Email?:</label>
-					<select data-role="slider">
-						<option value="yes">Yes?</option>	
-						<option value="no">No?</option>	
-					</select>	
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email"/>
+				<label for="phone">Phone:</label>
+				<input type="phone" name="phone" id="phone"/>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Contact via email?</legend>
+						<input type="checkbox" value="emailokay" name="emailokay" id="cost-1"/>
+						<label for="cost-1">Yes</label>
+					</fieldset>
 				</div>
 				<label for="priority">Project Priority:</label>
 				<input type="range" name="priority" id="priority" value="5" min="0" max="10"/>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Cost per square foot</legend>
+						<input type="radio" value="High" name="cost" id="cost-1"/>
+						<label for="cost-1">High</label>
+						<input type="radio" value="Medium" name="cost" id="cost-1"/>
+						<label for="cost-1">Medium</label>
+						<input type="radio" value="Low" name="cost" id="cost-1"/>
+						<label for="cost-1">Low</label>
+					</fieldset>
+				</div>
 				<div data-role="fieldcontain">	
 					<label for="notes">Job Notes:</label>
 					<textarea></textarea>
 				</div>
 				<input type="reset" value="reset"/>
 				<input type="submit" value="Create Project" data-theme="e"/>	
-				<a href="#project-type-error" id="error-project-type" data-rel="dialog">Open errors</a>			
+				<a href="#project-type-error" id="error-project-type" data-rel="dialog" data-transition="pop">Open errors</a>			
 			</form>
 		</div>	
 	</div>		
@@ -278,7 +293,7 @@
 	<!-- project-type-error-message -->
 	<div data-role="dialog" id="project-type-error">
 		<div data-role="header" data-position="fixed" >
-			<h1>Test error message</h1>
+			<h1>Missing field!</h1>
 		</div>
 		<div data-role="content">
 			<ul>
