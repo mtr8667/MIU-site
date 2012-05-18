@@ -298,7 +298,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 	}	
 	// Variable default Project Types array
-	var 	projectTypes		= ["- Select Project -","Addition", "Kitchen", "Lavatory", "Roof", "Basement"],
+	var 	projectTypes		= ["- Select a Project Type Below -","Addition", "Kitchen", "Lavatory", "Roof", "Basement"],
 			cost,				
 			emailOkay			=	"No",
 			errorMessage		=  ge("errors")
