@@ -1,7 +1,10 @@
+// Matthew RIchter 
+// MIU - Full Sail University
+// Project 
+// May 7, 2012
 $(document).ready(function(){
 	
-	var 	jgform = $("#jobform");
+	var rbform = $( "#projectform" );
 	
-	jgform.validate();
-
+	rbform.validate();
 });
