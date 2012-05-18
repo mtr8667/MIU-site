@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Matthew Richter, Project 2 for MIU 1205 Full Sail University  -->
-<!-- May 7, 1212 -->
+<!-- Matthew Richter, Project 3 for MIU 1205 Full Sail University  -->
+<!-- May 15, 1212 -->
 <!-- HTML TAG --> 
 <html lang="en">
 <head>
@@ -107,7 +107,7 @@
 				</div>
 				<div data-role="fieldcontain">
 					<label for="jobname" >Job Name:</label>
-					<input type="text" name="jobname" id="jobname" class="required"/>
+					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required"/>
 				</div>	
 				<div data-role="fieldcontain">	
 					<label for="firstname">First Name:</label>
@@ -131,9 +131,10 @@
 				</div>
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
-						<legend>Contact via email?</legend>
+						<legend>Email?</legend>
 						<input type="checkbox" value="emailokay" name="emailokay" id="email-1" data-mini="true"/>
 						<label for="email-1">Yes</label>
+						<small>Select yes if you would like to have us communicate via email.</small>
 					</fieldset>
 				</div>
 				<label for="priority">Project Priority:</label>
@@ -147,11 +148,12 @@
 						<label for="cost-2">Medium</label>
 						<input type="radio" value="Low" name="cost" id="cost-3" data-mini="true"/>
 						<label for="cost-3">Low</label>
+						<small>If the customer wants all high quality material and fixtures select high.</small>
 					</fieldset>
 				</div>
 				<div data-role="fieldcontain">	
 					<label for="notes">Job Notes:</label>
-					<textarea data-mini="true"></textarea>
+					<textarea data-mini="true" placeholder="Enter specific customer requests here." ></textarea>
 				</div>
 				<div data-role="fieldcontain">
 					<input type="reset" value="Clear Form" data-mini="true"/>

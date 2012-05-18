@@ -1,7 +1,7 @@
 // Matthew RIchter 
 // MIU - Full Sail University
-// Project 2
-// May 7, 2012
+// Project 3
+// May 15, 2012
 var json = {
 	"project1":		{
 		"project":		["Project Type:", "Kitchen"],

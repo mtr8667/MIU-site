@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Matthew Richter, Project 2 for MIU 1205 Full Sail University  -->
-<!-- May 7, 1212 -->
+<!-- Matthew Richter, Project 3 for MIU 1205 Full Sail University  -->
+<!-- May 15, 1212 -->
 <!-- HTML TAG -->
 <html>
 	<!-- Document Header -->
@@ -32,6 +32,7 @@
 			<a href="#" id="clearProjectsLink">clear projects</a>
 			<a href="#" id="showProjectsLink">show projects</a>
 			<a href="addProject.html" id="newProject" style="display:none;" >new project</a>
+			<input type="submit" value="Save Project"  id="saveProject"/>
 		</nav>
 		<!-- Form Group --> 
 		<form action="#" method="post" id="projectForm">		
@@ -40,7 +41,7 @@
 				<ul id="errors"></ul>
 				<ul id="questions">
 					<li id="select"><label for="project">* Project Type</label><br/></li>
-					<li><label for="pname">* Project Name:</label><input type="text" id="pname" placeholder="client last name + BBT"/></li>
+					<li><label for="pname">* Project Name:</label><input type="text" id="pname" placeholder="client last name + description"/></li>
 					<li><label for="fname">* First Name:</label><input type="text" id="fname" placeholder="client contact"/></li>
 					<li><label for="lname">* Last Name:</label><input type="text" id="lname" placeholder="client contact"/></li>
 					<li><label for="email">* Email:</label><input type="email" id="email" placeholder="example@email.com"/></li>
@@ -54,16 +55,17 @@
 					<li>Cost per square foot:
 						<ul>
 							<li><input type="radio" value="low" id="low" name="cost"/><label for="low">Low</label></li>
-							<li><input type="radio" value="medium" id="medium" name="cost"/><label for="medium">Medium</label></li>
+							<li><input type="radio" value="medium" id="medium" checked="true" name="cost"/><label for="medium">Medium</label></li>
 							<li><input type="radio" value="high" id="high" name="cost"/><label for="high">High</label></li>
+							<small>If the customer wants all high quality material and fixtures select high.</small>
 						</ul>
 					</li>
 					<li><label for="startDate">Start Date:</label><input type="date" id="startDate"/></li>
-					<li><label for="jobNotes">Job Notes:</label><textarea id="jobNotes"></textarea></li>			
+					<li><label for="jobNotes">Job Notes:</label><textarea id="jobNotes"></textarea></li>
+					<small>Enter specific customer requests here.</small>			
 				</ul>
 			</fieldset>
 						<!-- Submit --> 
-			<input type="submit" value="Save Project"  id="saveProject"/>
 		</form>
 		<!-- Footer Group --> 
 		<footer>
