@@ -23,24 +23,33 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<link href= "css/style.css" rel= "external" type="text/css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"/>
+	<link rel="stylesheet" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css">
+	<link href= "css/style.css" rel= "stylesheet" type="text/css"/>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
+
 <body>
+	
 	<!-- home page -->
 	<div data-role="page" id="home">
+		
+		<!-- header -->
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
+		
+		<!-- Call to Action -->
 		<div>
 			<a href="#newproject" >
 				<img src="images/cta3.png"/>
 			</a>	
 		</div>
+		
+		<!-- Catagory List -->
 		<div data-role="content">
 			<ul data-role="listview" data-filter="true" data-inset="true" data-mini="true">
 				<li>
@@ -75,7 +84,10 @@
 					</a></li>
 			</ul>
 		</div>
+		
+		<!-- Footer -->
 		<div data-role="footer" data-position="fixed">
+			
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -83,16 +95,27 @@
 					<li><a href="http://mtr8667.github.com/MIU-site/bronze/index.html">gh-pages(bronze)</a></li>
 				</ul>			
 			</div>
+		
 		</div>
+	
 	</div>
+	
 	<!-- new project form page -->
 	<div data-role="page" id="newproject"  data-add-back-btn="true">
+		
+		<!-- Header -->
 		<div data-role="header" data-position="fixed">
 			<h1>New Project</h1>
 		</div>
+		
+		<!-- Form -->
 		<div data-role="content">
+			
 			<form action="" method="post" id="projectform">
+				
 				<div data-role="fieldcontain">
+					
+					<!-- Drop down - Project Type -->
 					<label for="project-type">Project type:</label>
 					<select name="project-type" id="project-type" class="required" data-native-menu="false"  data-mini="true">
 						<option data-place-holder="true" value>Please select a project type.</option>
@@ -104,31 +127,46 @@
 							<option value="roof">Roof</option>
 						</optgroup>
 					</select>
+				
 				</div>
+				
+				<!-- Job Name -->
 				<div data-role="fieldcontain">
 					<label for="jobname" >Job Name:</label>
 					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required"/>
 				</div>	
+				
+				<!-- First Name -->
 				<div data-role="fieldcontain">	
 					<label for="firstname">First Name:</label>
 					<input type="text" name="firstname" id="firstname" data-mini="true" class="required"/>
 				</div>	
+				
+				<!-- Last Name -->
 				<div data-role="fieldcontain">	
 					<label for="lastname">Last Name:</label>
 					<input type="text" name="lastname" id="lastname" data-mini="true" class="required"/>
 				</div>	
+				
+				<!-- Email -->
 				<div data-role="fieldcontain">	
 					<label for="email">Email:</label>
 					<input type="email" name="email" id="email" data-mini="true" class="required email"/>
 				</div>	
+				
+				<!-- Phone -->
 				<div data-role="fieldcontain">	
 					<label for="phone">Phone:</label>
 					<input type="phone" name="phone" id="phone" data-mini="true"  class="required number"/>
 				</div>
+				
+				<!-- Date -->
 				<div data-role="fieldcontain">	
 					<label for="date">Date:</label>
 					<input type="date" name="date" id="date" checked="true" data-mini="true" class="required date"/>
 				</div>
+				
+				<!-- Email Okay? -->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Email?</legend>
@@ -137,6 +175,8 @@
 						<small>Select yes if you would like to have us communicate via email.</small>
 					</fieldset>
 				</div>
+				
+				<!-- Project Priority -->
 				<label for="priority">Project Priority:</label>
 				<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
 				<div data-role="fieldcontain">
@@ -151,32 +191,45 @@
 						<small>If the customer wants all high quality material and fixtures select high.</small>
 					</fieldset>
 				</div>
+				
+				<!-- Job Notes -->
 				<div data-role="fieldcontain">	
 					<label for="notes">Job Notes:</label>
 					<textarea data-mini="true" placeholder="Enter specific customer requests here." ></textarea>
 				</div>
+				
+				<!-- Reset - submit -->
 				<div data-role="fieldcontain">
 					<input type="reset" value="Clear Form" data-mini="true"/>
 					<input type="submit" value="Save Project" data-theme="e" />
 				</div>		
+				
+				<!-- link to error dialog -->
+				<a href="#showerrors" id="formerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+				
 			</form>
 		</div>	<!-- content -->
 	</div>	<!-- newproject -->	
-		<!-- project-type-error-message -->
+		
+	<!-- project-type-error-message -->
 	<div data-role="dialog" id="showerrors">
+		
 		<div data-role="header" data-position="fixed" >
-			<h1>Missing field!</h1>
+			<h1>Required fields missing!</h1>
 		</div>
+		
 		<div data-role="content">
 			<ul>
 				<li>test again</li>
 			</ul>
 		</div>
+	
 	</div>	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	<script scr="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>	
 	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
