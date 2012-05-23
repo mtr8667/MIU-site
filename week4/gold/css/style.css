@@ -1,0 +1,10 @@
+/*
+Week 3
+MIU 1205
+May 15, 2012
+Matthew Richter
+*/
+
+label.error {display: block; margin: 10px 0; color:red;}
+
+#formerrorslink {display:none;}
