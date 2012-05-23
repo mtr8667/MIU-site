@@ -44,7 +44,7 @@
 		
 		<!-- Call to Action -->
 		<div>
-			<a href="#newproject" >
+			<a href="#newproject" data-transition="pop">
 				<img src="images/cta3.png"/>
 			</a>	
 		</div>
@@ -101,7 +101,7 @@
 	</div>
 	
 	<!-- new project form page -->
-	<div data-role="page" id="newproject"  data-add-back-btn="true">
+	<div data-role="page" id="newproject"  data-add-back-btn="true" data-transition="pop">
 		
 		<!-- new project page Header -->
 		<div data-role="header" data-position="fixed">
@@ -163,7 +163,9 @@
 				<!-- Input Date -->
 				<div data-role="fieldcontain">	
 					<label for="date">Date</label>
-					<input type="date" name="date" id="date" checked="true" data-mini="true" class="required date"/>
+					<input type="date" name="date" id="date" data-mini="true" class="required date" />
+					<br/>
+					<small>yyyy-mm-dd</small>				
 				</div>
 				
 				<!-- Input Email Okay? -->
@@ -177,8 +179,12 @@
 				</div>
 				
 				<!-- Input Project Priority -->
-				<label for="priority">Project Priority</label>
-				<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
+				<div data-role="fieldcontain">
+					<label for="priority">Project Priority</label>
+					<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
+				</div>
+				
+				<!-- Input Cost per Square Foot -->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Cost per square foot</legend>
