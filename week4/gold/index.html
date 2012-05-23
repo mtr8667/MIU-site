@@ -41,11 +41,18 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
+		<div>
+			<center>
+				<img src="images/logo.png"/>
+			</center>
+		</div>
 		
 		<!-- Call to Action -->
 		<div>
 			<a href="#newproject" data-transition="pop">
-				<img src="images/cta3.png"/>
+				<center>	
+					<img src="images/cta3.png"/>
+				</center>
 			</a>	
 		</div>
 		
@@ -90,9 +97,10 @@
 			
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html">bronze</a></li>
+					<li><a href="#home" data-icon="home">home</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
+					<li><a href="#module" data-icon="info">details</a></li>
 				</ul>			
 			</div>
 		
@@ -107,17 +115,22 @@
 		<div data-role="header" data-position="fixed">
 			<h1>New Project</h1>
 		</div>
+		<div>
+			<center>
+				<img src="images/logo.png"/>
+			</center>
+		</div>
 		
 		<!-- Form -->
 		<div data-role="content">
 			
 			<form action="" method="post" id="projectform">
 				
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" data-mini="true">
 					
 					<!-- Input Drop down - Project Type -->
 					<label for="project-type">Project type</label>
-					<select name="project-type" id="project-type" class="required" data-native-menu="false"  data-mini="true">
+					<select name="project-type" id="project-type" class="required" data-native-menu="false">
 						<option data-place-holder="true" value>Please select a project type.</option>
 						<optgroup>
 							<option value="addition">Addition</option>
@@ -131,39 +144,39 @@
 				</div>
 				
 				<!-- Input Job Name -->
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" data-mini="true">
 					<label for="jobname" >Job Name</label>
 					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required"/>
 				</div>	
 				
 				<!-- Input First Name -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="firstname">First Name</label>
-					<input type="text" name="firstname" id="firstname" data-mini="true" class="required"/>
+					<input type="text" name="firstname" id="firstname" class="required"/>
 				</div>	
 				
 				<!-- Input Last Name -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="lastname">Last Name</label>
-					<input type="text" name="lastname" id="lastname" data-mini="true" class="required"/>
+					<input type="text" name="lastname" id="lastname" class="required"/>
 				</div>
 				
 				<!-- Input Address -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="address">Address</label>
-					<input type="text" name="address" id="address" data-mini="true" maxlength="40" class="required" size="20" />
+					<input type="text" name="address" id="address" maxlength="40" class="required" size="20" />
 				</div>
 				
 				<!-- Input City -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="city">City</label>
-					<input type="text" name="city" id="city" data-mini="true" class="required"/>
+					<input type="text" name="city" id="city" class="required"/>
 				</div>
 				
 				<!-- Input State -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="state">State</label>
-					<select id="state" class="required" name="state" data-native-menu="false"  data-mini="true">
+					<select id="state" class="required" name="state" data-native-menu="false">
 					<option data-place-holder="true" value>Please select a state.</option>
 						<optgroup>
 	      					<option value="AL">Alabama</option>
@@ -174,63 +187,63 @@
 				</div>
 				
 				<!-- Input Zip -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="zip">zip</label>
-					<input type="text" name="zip" id="zip" data-mini="true" class="required zipcode" maxlength="10" style="width: 100px"  />
+					<input type="text" name="zip" id="zip" class="required zipcode" maxlength="10" style="width: 100px"  />
 				</div>					
 				
 				<!-- Input Email -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="email">Email</label>
-					<input type="text" name="email" id="email" data-mini="true" class="required email"/>
+					<input type="text" name="email" id="email" class="required email"/>
 				</div>	
 				
 				<!-- Input Phone -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="phone">Phone</label>
-					<input type="text" name="phone" id="phone" data-mini="true"  class="required phone" maxlength="14"/>
+					<input type="text" name="phone" id="phone" class="required phone" maxlength="14"/>
 				</div>
 				
 				<!-- Input Date -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="date">Date</label>
-					<input type="text" name="date" id="date" data-mini="true" class="required date" placeholder="mm/dd/yyyy"/>			
+					<input type="text" name="date" id="date" class="required date" placeholder="mm/dd/yyyy"/>			
 				</div>
 				
 				<!-- Input Email Okay? -->
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" data-mini="true">
 					<fieldset data-role="controlgroup">
 						<legend>Email?</legend>
-						<input type="checkbox" value="emailokay" checked="true" name="emailokay" id="email-1" data-mini="true"/>
+						<input type="checkbox" value="emailokay" checked="true" name="emailokay" id="email-1"/>
 						<label for="email-1">Yes</label>
 						<small>Select yes if you would like to have us communicate via email.</small>
 					</fieldset>
 				</div>
 				
 				<!-- Input Project Priority -->
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" data-mini="true">
 					<label for="priority">Project Priority</label>
-					<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
+					<input type="range" name="priority" id="priority" value="5" min="0" max="10"/>
 				</div>
 				
 				<!-- Input Cost per Square Foot -->
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" data-mini="true">
 					<fieldset data-role="controlgroup">
 						<legend>Cost per square foot</legend>
-						<input type="radio" value="High" name="cost" id="cost-1" data-mini="true"/>
+						<input type="radio" value="High" name="cost" id="cost-1"/>
 						<label for="cost-1">High</label>
-						<input type="radio" value="Medium" name="cost" checked="true" id="cost-2" data-mini="true"/>
+						<input type="radio" value="Medium" name="cost" checked="true" id="cost-2"/>
 						<label for="cost-2">Medium</label>
-						<input type="radio" value="Low" name="cost" id="cost-3" data-mini="true"/>
+						<input type="radio" value="Low" name="cost" id="cost-3"/>
 						<label for="cost-3">Low</label>
 						<small>If the customer wants all high quality material and fixtures select high.</small>
 					</fieldset>
 				</div>
 				
 				<!-- Input Job Notes -->
-				<div data-role="fieldcontain">	
+				<div data-role="fieldcontain" data-mini="true">	
 					<label for="notes">Job Notes</label>
-					<textarea data-mini="true" placeholder="Enter specific customer requests here." ></textarea>
+					<textarea  placeholder="Enter specific customer requests here." ></textarea>
 				</div>
 				
 				<!-- Reset - submit buttons -->
@@ -249,9 +262,10 @@
 			
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html">gold</a></li>
-					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html">bronze</a></li>
+					<li><a href="#home" data-icon="home">home</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
+					<li><a href="#module" data-icon="info">details</a></li>				
 				</ul>			
 			</div>
 		
@@ -271,7 +285,43 @@
 			</ul>
 		</div>
 	
-	</div>	
+	</div>
+	
+	<!-- module tab page &  responsive disclosure-->
+	<div data-role="page" id="module" data-add-back-btn="true" data-transition="pop">
+		
+		<div data-role="header" data-position="fixed" >
+			<h1>Job Genie</h1>
+		</div>
+		<div>
+			<center>
+				<img src="images/logo.png"/>
+			</center>
+		</div>	
+		<div data-role="content">	
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#feedback">feedback</a></li>
+					<li><a href="#summary">summary</a></li>
+				</ul>			
+			</div>
+		</div>	
+		
+		<!-- module tab page &  responsive disclosure Footer -->
+		<div data-role="footer" data-position="fixed">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">home</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star">gold</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star">bronze</a></li>
+					<li><a href="#module" data-icon="info" data-transition="pop">details</a></li>
+				</ul>			
+			</div>
+		
+		</div>
+	
+	</div>		
 	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
