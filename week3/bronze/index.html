@@ -33,37 +33,52 @@
 <body>
 	<!-- home page -->
 	<div data-role="page" id="home">
+		<!-- home page Header -->
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
+		
 		<div data-role="content">
 			<a href="addProject.html" data-ajax="false">
-				<img src="images/cta3.png" width="400" />
+				<img src="images/cta3.png"/>
 			</a>	
 		</div>
+		<!-- home page thumb nail grid -->
 		<div data-role="content">	
+			
 			<div data-role="fieldcontain">
+				
 				<div class="ui-grid-b">
+					
 					<div class="ui-block-a">
 						<img src="images/a.png"/>					
 					</div>
+					
 					<div class="ui-block-b">
 						<img src="images/b.png"/>		
 					</div>
+					
 					<div class="ui-block-c">
 						<img src="images/k.png"/>		
 					</div>
+					
 					<div class="ui-block-a">
 						<img src="images/l.png"/>		
 					</div>
+					
 					<div class="ui-block-b">
 						<img src="images/r.png"/>		
 					</div>
-				</div>
-			</div>
-		</div>	
-		<div data-role="content">
-				<div data-role="collapsible" data-collapsed="true">
+				
+				</div> <!-- end fieldcontain -->
+			
+			</div> <!-- end fieldcontain -->
+		
+		</div><!-- end content -->	
+		
+		<!-- home page List Inlay-->
+				<div data-role="content">
+				<div data-role="collapsible" data-collapsed="true" data-theme="e">
 					<h3>Additions</h3>
 					<p>cape to colonial, master bedroom, second story</p>
 						<div data-role="collapsible" data-collapsed="true">
@@ -79,7 +94,7 @@
 							<p>add a second level to a ranch home</p>
 						</div>
 				</div>
-				<div data-role="collapsible" data-collapsed="true">
+				<div data-role="collapsible" data-collapsed="true" data-theme="e">
 						<h3>Basements</h3>
 						<p>game room, extra kitchen, wine cellar, man cave</p>
 						<div data-role="collapsible" data-collapsed="true">
@@ -95,7 +110,7 @@
 							<p>use half of existing space to install a cedar wine cellar</p>
 						</div>
 				</div>	
-				<div data-role="collapsible" data-collapsed="true">
+				<div data-role="collapsible" data-collapsed="true" data-theme="e">
 						<h3>Kitchens</h3>
 						<p>cabinets, tile back splash, custom islands, counter tops</p>
 						<div data-role="collapsible" data-collapsed="true">
@@ -111,7 +126,7 @@
 							<p>install a custom island</p>
 						</div>
 				</div>		
-				<div data-role="collapsible" data-collapsed="true">
+				<div data-role="collapsible" data-collapsed="true" data-theme="e">
 						<h3>Lavatories</h3>
 						<p>bathrooms, vanities, tile showers, fixtures</p>
 						<div data-role="collapsible" data-collapsed="true">
@@ -127,7 +142,7 @@
 							<p>gut, replace rotten wood and install a custom tile shower</p>
 						</div>
 				</div>
-				<div data-role="collapsible" data-collapsed="true">
+				<div data-role="collapsible" data-collapsed="true" data-theme="e">
 						<h3>Roofs</h3>
 						<p>weather shielding, turrets, slate</p>
 						<div data-role="collapsible" data-collapsed="true">
@@ -143,17 +158,20 @@
 							<p>remove existing roof and install slate roof</p>
 						</div>
 				</div>
-		</div>		
+		</div>
 		<div data-role="footer" data-position="fixed">
+			
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/gold/index.html">gh-pages(gold)</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/bronze/index.html">gh-pages(bronze)</a></li>
-					<li><a href="#tips">Tips</a></li>
+					<li><a href="#tips">Tips/News</a></li>
 				</ul>			
 			</div>
+		
 		</div>
+	
 	</div>	
 	<!-- tips (news stream) page -->
 	<div data-role="page" id="tips">
@@ -163,29 +181,34 @@
 		<div data-role="content">
 			<ul data-role="listview" data-filter="true" data-inset="false">
 				<li>
-						<img src="images/a.png"/>
-						<h3>Addition Tips</h3>
-						<p>cape to colonial, master bedroom, second story</p>
+						<a href="#underconstruction">	
+							<h3>Addition Tips</h3>
+							<p>cape to colonial, master bedroom, second story</p>
+						</a>
 				</li>
 				<li>
-						<img src="images/b.png"/>
-						<h3>Basement Tips</h3>
-						<p>game room, extra kitchen, wine cellar, man cave</p>
+						<a href="#underconstruction">		
+							<h3>Basement Tips</h3>
+							<p>game room, extra kitchen, wine cellar, man cave</p>
+						</a>
 				</li>	
 				<li>
-						<img src="images/k.png"/>
-						<h3>Kitchen Tips</h3>
-						<p>cabinets, tile back splash, custom islands, counter tops</p>
+						<a href="#underconstruction">	
+							<h3>Kitchen Tips</h3>
+							<p>cabinets, tile back splash, custom islands, counter tops</p>
+						</a>
 				</li>
 				<li>
-						<img src="images/l.png"/>
-						<h3>Lavatory Tips</h3>
-						<p>bathrooms, vanities, tile showers, fixtures</p>
+						<a href="#underconstruction">	
+							<h3>Lavatory Tips</h3>
+							<p>bathrooms, vanities, tile showers, fixtures</p>
+						</a>
 				</li>
 				<li>
-						<img src="images/r.png"/>
-						<h3>Roof Tips</h3>
-						<p>weather shielding, turrets, slate</p>
+						<a href="#underconstruction">		
+							<h3>Roof Tips</h3>
+							<p>weather shielding, turrets, slate</p>
+						</a>
 				</li>
 			</ul>
 		</div>
@@ -195,11 +218,31 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/gold/index.html">gh-pages(gold)</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/bronze/index.html">gh-pages(bronze)</a></li>
-					<li><a href="#tips">Tips</a></li>
+					<li><a href="#tips">Tips/News</a></li>
 				</ul>			
 			</div>
 		</div>
 	</div>
+	
+	<div data-role="page" id="underconstruction" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Job Genie</h1>
+		</div>
+	<div data-role="content">
+		<div id="underimage">
+			<img src="images/under.png" border="0" />
+		</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="http://mtr8667.github.com/MIU-site/gold/index.html">gh-pages(gold)</a></li>
+				<li><a href="http://mtr8667.github.com/MIU-site/bronze/index.html">gh-pages(bronze)</a></li>
+				<li><a href="#tips">Tips/News</a></li>
+			</ul>			
+		</div>
+	</div>	
+	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>

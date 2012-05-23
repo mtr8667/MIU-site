@@ -37,7 +37,7 @@
 	<!-- home page -->
 	<div data-role="page" id="home">
 		
-		<!-- header -->
+		<!-- home page header -->
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
@@ -85,7 +85,7 @@
 			</ul>
 		</div>
 		
-		<!-- Footer -->
+		<!-- Home page Footer -->
 		<div data-role="footer" data-position="fixed">
 			
 			<div data-role="navbar">
@@ -103,7 +103,7 @@
 	<!-- new project form page -->
 	<div data-role="page" id="newproject"  data-add-back-btn="true">
 		
-		<!-- Header -->
+		<!-- new project page Header -->
 		<div data-role="header" data-position="fixed">
 			<h1>New Project</h1>
 		</div>
@@ -115,8 +115,8 @@
 				
 				<div data-role="fieldcontain">
 					
-					<!-- Drop down - Project Type -->
-					<label for="project-type">Project type:</label>
+					<!-- Input Drop down - Project Type -->
+					<label for="project-type">Project type</label>
 					<select name="project-type" id="project-type" class="required" data-native-menu="false"  data-mini="true">
 						<option data-place-holder="true" value>Please select a project type.</option>
 						<optgroup>
@@ -130,43 +130,43 @@
 				
 				</div>
 				
-				<!-- Job Name -->
+				<!-- Input Job Name -->
 				<div data-role="fieldcontain">
-					<label for="jobname" >Job Name:</label>
+					<label for="jobname" >Job Name</label>
 					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required"/>
 				</div>	
 				
-				<!-- First Name -->
+				<!-- Input First Name -->
 				<div data-role="fieldcontain">	
-					<label for="firstname">First Name:</label>
+					<label for="firstname">First Name</label>
 					<input type="text" name="firstname" id="firstname" data-mini="true" class="required"/>
 				</div>	
 				
-				<!-- Last Name -->
+				<!-- Input Last Name -->
 				<div data-role="fieldcontain">	
-					<label for="lastname">Last Name:</label>
+					<label for="lastname">Last Name</label>
 					<input type="text" name="lastname" id="lastname" data-mini="true" class="required"/>
 				</div>	
 				
-				<!-- Email -->
+				<!-- Input Email -->
 				<div data-role="fieldcontain">	
-					<label for="email">Email:</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email" data-mini="true" class="required email"/>
 				</div>	
 				
-				<!-- Phone -->
+				<!-- Input Phone -->
 				<div data-role="fieldcontain">	
-					<label for="phone">Phone:</label>
+					<label for="phone">Phone</label>
 					<input type="phone" name="phone" id="phone" data-mini="true"  class="required number"/>
 				</div>
 				
-				<!-- Date -->
+				<!-- Input Date -->
 				<div data-role="fieldcontain">	
-					<label for="date">Date:</label>
+					<label for="date">Date</label>
 					<input type="date" name="date" id="date" checked="true" data-mini="true" class="required date"/>
 				</div>
 				
-				<!-- Email Okay? -->
+				<!-- Input Email Okay? -->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Email?</legend>
@@ -176,8 +176,8 @@
 					</fieldset>
 				</div>
 				
-				<!-- Project Priority -->
-				<label for="priority">Project Priority:</label>
+				<!-- Input Project Priority -->
+				<label for="priority">Project Priority</label>
 				<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
@@ -192,27 +192,27 @@
 					</fieldset>
 				</div>
 				
-				<!-- Job Notes -->
+				<!-- Input Job Notes -->
 				<div data-role="fieldcontain">	
-					<label for="notes">Job Notes:</label>
+					<label for="notes">Job Notes</label>
 					<textarea data-mini="true" placeholder="Enter specific customer requests here." ></textarea>
 				</div>
 				
-				<!-- Reset - submit -->
+				<!-- Reset - submit buttons -->
 				<div data-role="fieldcontain">
 					<input type="reset" value="Clear Form" data-mini="true"/>
 					<input type="submit" value="Save Project" data-theme="e" />
 				</div>		
 				
 				<!-- link to error dialog -->
-				<a href="#showerrors" id="formerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+				<a href="#showerrors" id="formerrorslink" data-rel="dialog" data-transition="pop" >Open Errors</a>
 				
 			</form>
 		</div>	<!-- content -->
 	</div>	<!-- newproject -->	
 		
-	<!-- project-type-error-message -->
-	<div data-role="dialog" id="showerrors">
+	<!-- project-type-error-message pop up-->
+	<div data-role="dialog" id="showerrors" data-theme="e">
 		
 		<div data-role="header" data-position="fixed" >
 			<h1>Required fields missing!</h1>
@@ -225,6 +225,7 @@
 		</div>
 	
 	</div>	
+	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
