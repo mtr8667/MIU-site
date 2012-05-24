@@ -32,7 +32,7 @@
 			<a href="#" id="clearProjectsLink">clear projects</a>
 			<a href="#" id="showProjectsLink">show projects</a>
 			<a href="addProject.html" id="newProject" style="display:none;" >new project</a>
-			<input type="submit" value="Save Project"  id="saveProject"/>
+			<input type="submit" value="Save Project"  id="saveProject" data-ajax="false"/>
 		</nav>
 		<!-- Form Group --> 
 		<form action="#" method="post" id="projectForm">		
@@ -44,8 +44,8 @@
 					<li><label for="pname">* Project Name:</label><input type="text" id="pname" placeholder="client last name + description"/></li>
 					<li><label for="fname">* First Name:</label><input type="text" id="fname" placeholder="client contact"/></li>
 					<li><label for="lname">* Last Name:</label><input type="text" id="lname" placeholder="client contact"/></li>
-					<li><label for="email">* Email:</label><input type="email" id="email" placeholder="example@email.com"/></li>
-					<li><label for="phone">* Phone:</label><input type="phone" id="phone" /></li>									
+					<li><label for="email">Email:</label><input type="email" id="email" placeholder="example@email.com"/></li>
+					<li><label for="phone">Phone:</label><input type="phone" id="phone" /></li>									
 					<li>Would you like to be contacted by email?:
 						<ul>
 							<li><input type="checkbox" value="Yes" id="emailOkay" /><label for="emailOkay">Email Okay</label></li>
