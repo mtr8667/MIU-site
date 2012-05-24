@@ -17,7 +17,8 @@
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no"> 
+	
 	
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
 	<meta http-equiv="cleartype" content="on">
@@ -38,26 +39,23 @@
 	<div data-role="page" id="home">
 		
 		<!-- home page header -->
-		<div data-role="header" data-position="fixed">
-			<h1>Job Genie</h1>
+		<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
-		</div>
+		
 		
 		<!-- Call to Action -->
-		<div>
-			<a href="#newproject" data-transition="pop">
-				<center>	
-					<img src="images/cta3.png"/>
-				</center>
-			</a>	
-		</div>
+		<div data-role="content">	
+			<div>
+				<a href="#newproject" data-transition="pop">
+					<center>	
+						<img src="images/cta3.jpg"/>
+					</center>
+				</a>	
+			</div>
 		
 		<!-- Catagory List -->
-		<div data-role="content">
+		
 			<ul data-role="listview" data-filter="true" data-inset="true" data-mini="true">
 				<li>
 					<a href="#additions">
@@ -93,14 +91,14 @@
 		</div>
 		
 		<!-- Home page Footer -->
-		<div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="footer" data-position="fixed" data-id="footer" data-theme="a">
 			
-			<div data-role="navbar">
+			<div data-role="navbar" data-theme="a">
 				<ul>
-					<li><a href="#home" data-icon="home" class="ui-btn-active"  data-transition="pop">home</a></li>
+					<li><a href="#home" data-theme="e" data-icon="home" class="ui-btn-active"  data-transition="pop">home</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="pop">gold</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="pop">bronze</a></li>
-					<li><a href="#module" data-icon="info" data-transition="pop">details</a></li>
+					<li><a href="#feedback" data-icon="info" data-transition="pop">extra</a></li>
 				</ul>			
 			</div>
 		
@@ -112,13 +110,8 @@
 	<div data-role="page" id="newproject"  data-add-back-btn="true" data-transition="pop">
 		
 		<!-- new project page Header -->
-		<div data-role="header" data-position="fixed">
-			<h1>New Project</h1>
-		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
+		<div data-role="header" data-position="fixed" data-id="header">
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
 		
 		<!-- Form -->
@@ -126,11 +119,11 @@
 			
 			<form action="" method="post" id="projectform">
 				
-				<div data-role="fieldcontain" data-mini="true">
+				<div data-role="fieldcontain" >
 					
 					<!-- Input Drop down - Project Type -->
 					<label for="project-type">Project type</label>
-					<select name="project-type" id="project-type" class="required" data-native-menu="false">
+					<select name="project-type" id="project-type" class="required" data-native-menu="false" data-mini="true">
 						<option data-place-holder="true" value>Please select a project type.</option>
 						<optgroup>
 							<option value="addition">Addition</option>
@@ -144,39 +137,39 @@
 				</div>
 				
 				<!-- Input Job Name -->
-				<div data-role="fieldcontain" data-mini="true">
+				<div data-role="fieldcontain" >
 					<label for="jobname" >Job Name</label>
-					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required"/>
+					<input type="text" name="jobname" id="jobname" placeholder="customer last name + description" class="required" data-mini="true"/>
 				</div>	
 				
 				<!-- Input First Name -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="firstname">First Name</label>
-					<input type="text" name="firstname" id="firstname" class="required"/>
+					<input type="text" name="firstname" id="firstname" class="required" data-mini="true"/>
 				</div>	
 				
 				<!-- Input Last Name -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="lastname">Last Name</label>
-					<input type="text" name="lastname" id="lastname" class="required"/>
+					<input type="text" name="lastname" id="lastname" class="required" data-mini="true"/>
 				</div>
 				
 				<!-- Input Address -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="address">Address</label>
-					<input type="text" name="address" id="address" maxlength="40" class="required" size="20" />
+					<input type="text" name="address" id="address" maxlength="40" class="required" size="20" data-mini="true"/>
 				</div>
 				
 				<!-- Input City -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="city">City</label>
-					<input type="text" name="city" id="city" class="required"/>
+					<input type="text" name="city" id="city" class="required" data-mini="true"/>
 				</div>
 				
 				<!-- Input State -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="state">State</label>
-					<select id="state" class="required" name="state" data-native-menu="false">
+					<select id="state" class="required" name="state" data-native-menu="false" data-mini="true">
 					<option data-place-holder="true" value>Please select a state.</option>
 						<optgroup>
 	      					<option value="AL">Alabama</option>
@@ -187,63 +180,63 @@
 				</div>
 				
 				<!-- Input Zip -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="zip">zip</label>
-					<input type="text" name="zip" id="zip" class="required zipcode" maxlength="10" style="width: 100px"  />
+					<input type="text" name="zip" id="zip" class="required zipcode" maxlength="10" style="width: 100px"  data-mini="true"/>
 				</div>					
 				
 				<!-- Input Email -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="email">Email</label>
-					<input type="text" name="email" id="email" class="required email"/>
+					<input type="text" name="email" id="email" class="required email" data-mini="true"/>
 				</div>	
 				
 				<!-- Input Phone -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="phone">Phone</label>
-					<input type="text" name="phone" id="phone" class="required phone" maxlength="14"/>
+					<input type="text" name="phone" id="phone" class="required phone" maxlength="14" data-mini="true"/>
 				</div>
 				
 				<!-- Input Date -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain">	
 					<label for="date">Date</label>
-					<input type="text" name="date" id="date" class="required date" placeholder="mm/dd/yyyy"/>			
+					<input type="text" name="date" id="date" class="required date" placeholder="mm/dd/yyyy"  data-mini="true"/>			
 				</div>
 				
 				<!-- Input Email Okay? -->
-				<div data-role="fieldcontain" data-mini="true">
+				<div data-role="fieldcontain" >
 					<fieldset data-role="controlgroup">
 						<legend>Email?</legend>
-						<input type="checkbox" value="emailokay" checked="true" name="emailokay" id="email-1"/>
+						<input type="checkbox" value="emailokay" checked="true" name="emailokay" id="email-1" data-mini="true"/>
 						<label for="email-1">Yes</label>
 						<small>Select yes if you would like to have us communicate via email.</small>
 					</fieldset>
 				</div>
 				
 				<!-- Input Project Priority -->
-				<div data-role="fieldcontain" data-mini="true">
+				<div data-role="fieldcontain">
 					<label for="priority">Project Priority</label>
-					<input type="range" name="priority" id="priority" value="5" min="0" max="10"/>
+					<input type="range" name="priority" id="priority" value="5" min="0" max="10" data-mini="true"/>
 				</div>
 				
 				<!-- Input Cost per Square Foot -->
-				<div data-role="fieldcontain" data-mini="true">
+				<div data-role="fieldcontain" >
 					<fieldset data-role="controlgroup">
 						<legend>Cost per square foot</legend>
-						<input type="radio" value="High" name="cost" id="cost-1"/>
+						<input type="radio" value="High" name="cost" id="cost-1" data-mini="true"/>
 						<label for="cost-1">High</label>
-						<input type="radio" value="Medium" name="cost" checked="true" id="cost-2"/>
+						<input type="radio" value="Medium" name="cost" checked="true" id="cost-2" data-mini="true"/>
 						<label for="cost-2">Medium</label>
-						<input type="radio" value="Low" name="cost" id="cost-3"/>
+						<input type="radio" value="Low" name="cost" id="cost-3" data-mini="true"/>
 						<label for="cost-3">Low</label>
 						<small>If the customer wants all high quality material and fixtures select high.</small>
 					</fieldset>
 				</div>
 				
 				<!-- Input Job Notes -->
-				<div data-role="fieldcontain" data-mini="true">	
+				<div data-role="fieldcontain" >	
 					<label for="notes">Job Notes</label>
-					<textarea  placeholder="Enter specific customer requests here." ></textarea>
+					<textarea  placeholder="Enter specific customer requests here." data-mini="true"></textarea>
 				</div>
 				
 				<!-- Reset - submit buttons -->
@@ -265,12 +258,12 @@
 					<li><a href="#home" data-icon="home" data-transition="pop">home</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="pop">gold</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="pop">bronze</a></li>
-					<li><a href="#module" data-icon="info" data-transition="pop">details</a></li>				
+					<li><a href="#feedback" data-icon="info" data-transition="pop">extra</a></li>				
 				</ul>			
 			</div>
 		
 		</div>
-	</div>	<!-- newproject -->	
+	</div>	<!-- newproject end -->	
 		
 	<!-- project-type-error-message pop up-->
 	<div data-role="dialog" id="showerrors" data-theme="e">
@@ -287,27 +280,42 @@
 	
 	</div>
 	
-	<!-- module tab page &  responsive disclosure-->
-	<div data-role="page" id="module" data-add-back-btn="true" data-transition="pop">
+	<!-- feedback (module) tab page &  responsive disclosure-->
+	<div data-role="page" id="feedback" data-add-back-btn="true" data-transition="pop">
 		
-		<div data-role="header" data-position="fixed" >
-			<h1>Job Genie</h1>
+		<div data-role="header" data-position="fixed" data-id="header">
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
-		</div>	
-		<div data-role="content">	
-			<div data-role="navbar">
+		
+		<div data-role="content" data-id="module">	
+			<div data-role="navbar" >
 				<ul>
-					<li><a href="#feedback">feedback</a></li>
-					<li><a href="#summary">summary</a></li>
+					<li><a href="#feedback" class="ui-btn-active" data-transition="fade">feedback</a></li>
+					<li><a href="#jobreporting" data-transition="fade">job reporting</a></li>
 				</ul>			
 			</div>
+			<div data-role="fieldcontain" >
+					<p>Does the customer want updates on their project?</p>
+					<fieldset data-role="controlgroup">
+						<legend></legend>
+						<input type="radio" value="yes" name="update" id="update-1" />
+						<label for="update-1">Yes</label>
+						<input type="radio" value="no" name="update" id="update-2" />
+						<label for="update-2">No</label>
+					</fieldset>
+			</div>
+			<div data-role="fieldcontain" >
+					<p>Does the customer want weekly or monthly updates?</p>
+					<fieldset data-role="controlgroup">
+						<legend></legend>
+						<input type="radio" value="weekly" name="frequency" id="frequency-1" />
+						<label for="frequency-1">weekly</label>
+						<input type="radio" value="monthly" name="frequency" id="frequency-2" />
+						<label for="frequency-2">monthly</label>
+					</fieldset>
+			</div>
 		</div>	
-		
-		<!-- module tab page &  responsive disclosure Footer -->
+		<!-- feedback (module) tab page &  responsive disclosure Footer -->
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			
 			<div data-role="navbar">
@@ -315,7 +323,56 @@
 					<li><a href="#home" data-icon="home" data-transition="pop">home</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="pop">gold</a></li>
 					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="pop">bronze</a></li>
-					<li><a href="#module" data-icon="info" class="ui-btn-active" data-transition="pop">details</a></li>
+					<li><a href="#feedback" data-icon="info" class="ui-btn-active" data-transition="pop">extra</a></li>
+				</ul>			
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	<!-- jobreporting (module) tab page -->
+	<div data-role="page" id="jobreporting" data-add-back-btn="true" data-transition="pop">
+		
+		<div data-role="header" data-position="fixed" data-id="header">
+			<h1>Job Genie<img src="images/logo.png"/></h1>
+		</div>
+		
+		<div data-role="content" data-id="module">	
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#feedback" data-transition="fade">feedback</a></li>
+					<li><a href="#jobreporting" class="ui-btn-active" data-transition="fade">job reporting</a></li>
+				</ul>			
+			</div>
+			<div data-role="fieldcontain" >
+					<p>Would you like updates on your project?</p>
+					<fieldset data-role="controlgroup">
+						<legend></legend>
+						<input type="radio" value="yes" name="update" id="update-1" />
+						<label for="update-1">Yes</label>
+						<input type="radio" value="no" name="update" id="update-2" />
+						<label for="update-2">NO</label>
+					</fieldset>
+			</div>
+			<div data-role="fieldcontain" >
+					<fieldset data-role="controlgroup">
+						<legend>Email?</legend>
+						<input type="checkbox" value="emailokay" checked="true" name="emailokay" id="email-1" data-mini="true"/>
+						<label for="email-1">Yes</label>
+						<small>Select yes if you would like to have us communicate via email.</small>
+					</fieldset>
+				</div>
+		</div>	
+		<!-- jobreporting (module) tab page Footer -->
+		<div data-role="footer" data-position="fixed" data-id="footer">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="pop">home</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/gold/index.html" data-icon="star" data-transition="pop">gold</a></li>
+					<li><a href="http://mtr8667.github.com/MIU-site/week4/bronze/index.html" data-icon="star" data-transition="pop">bronze</a></li>
+					<li><a href="#feedback" data-icon="info" class="ui-btn-active" data-transition="pop">extra</a></li>
 				</ul>			
 			</div>
 		
