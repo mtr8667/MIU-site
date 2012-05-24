@@ -229,16 +229,12 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getProjectName		= ge("pname");
 		var getFname 				= ge("fname");
 		var getLname 				= ge("lname");
-		var getEmail 				= ge("email");
-		var getPhone 				= ge("phone");
 		// reset error messages
 		errorMessage.innerHTML 		= "";
 		getProjectType.style.border 	= "1px solid black";
 		getProjectName.style.border 	= "1px solid black";
 		getFname.style.border 			= "1px solid black";
 		getLname.style.border 			= "1px solid black";
-		getEmail.style.border 			= "1px solid black";
-		getPhone.style.border 			= "1px solid black";
 		// get error messages 
 		var messageArray = [];
 		// Project type validation
@@ -265,20 +261,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			var lNameError = "Please enter a last name.";
 			getLname.style.border = "1px solid red";
 			messageArray.push(lNameError);
-		}
-		// Email validation
-		var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}ge/; 
-		if(!(re.exec(getEmail.value))){
-			var emailError = "Please enter a valid email.";
-			getEmail.style.border = "1px solid red";
-			messageArray.push(emailError);
-		}
-		// Phone validation
-		var re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})ge/;
-		if(!(re.exec(getPhone.value))){
-			var phoneError = "Please enter a valid phone number.";
-			getPhone.style.border = "1px solid red";
-			messageArray.push(phoneError);
 		}
 		// if errors display them
 		if(messageArray.length >= 1){

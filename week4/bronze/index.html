@@ -23,7 +23,7 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<link href= "css/style.css" rel= "stylesheet" type="text/css"/>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -35,12 +35,7 @@
 	<div data-role="page" id="home">
 		<!-- home page Header -->
 		<div data-role="header" data-position="fixed">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
 		<div data-role="content">
 			<a href="addProject.html" data-ajax="false">
@@ -180,46 +175,50 @@
 	<!-- tips (news stream) page -->
 	<div data-role="page" id="tips" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
-			<h1>Tips</h1>
-		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
 		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-inset="false">
-				<li>
-						<a href="#underconstruction">	
-							<h3>Addition Tips</h3>
-							<p>cape to colonial, master bedroom, second story</p>
-						</a>
-				</li>
-				<li>
-						<a href="#underconstruction">		
-							<h3>Basement Tips</h3>
-							<p>game room, extra kitchen, wine cellar, man cave</p>
-						</a>
-				</li>	
-				<li>
-						<a href="#underconstruction">	
-							<h3>Kitchen Tips</h3>
-							<p>cabinets, tile back splash, custom islands, counter tops</p>
-						</a>
-				</li>
-				<li>
-						<a href="#underconstruction">	
-							<h3>Lavatory Tips</h3>
-							<p>bathrooms, vanities, tile showers, fixtures</p>
-						</a>
-				</li>
-				<li>
-						<a href="#underconstruction">		
-							<h3>Roof Tips</h3>
-							<p>weather shielding, turrets, slate</p>
-						</a>
-				</li>
-			</ul>
+			<div data-role="fieldcontain">
+				<ul data-role="listview" data-filter="true" data-inset="false">
+					<li>
+							<a href="#underconstruction">	
+								<h3>Addition Tips   <small>-      May, 2012</small></h3>
+								<p>cape to colonial, master bedroom, second story</p>
+							</a>
+					</li>
+					<li>
+							<a href="#underconstruction">		
+								<h3>Basement Tips   <small>-     April, 2012</small></h3>
+								<p>game room, extra kitchen, wine cellar, man cave</p>
+							</a>
+					</li>	
+					<li>
+							<a href="#underconstruction">	
+								<h3>Kitchen Tips   <small>-      March, 2012</small></h3>
+								<p>cabinets, tile back splash, custom islands, counter tops</p>
+							</a>
+					</li>
+					<li>
+							<a href="#underconstruction">	
+								<h3>Lavatory Tips   <small>-      February, 2012</small></h3>
+								<p>bathrooms, vanities, tile showers, fixtures</p>
+							</a>
+					</li>
+					<li>
+							<a href="#underconstruction">		
+								<h3>Roof Tips   <small>-      January, 2012</small></h3>
+								<p>weather shielding, turrets, slate</p>
+							</a>
+					</li>
+				</ul>
+			</div>	
+		
+				<div>
+						<center>
+							<p><small id="footer"> &copy; 2012 BBTmobi.com All Rights Reserved.</small></p>
+						</center>
+				</div>
+			
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			<div data-role="navbar">
@@ -235,17 +234,12 @@
 	
 	<div data-role="page" id="underconstruction" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
-			<h1>Job Genie</h1>
-		</div>
-		<div>
-			<center>
-				<img src="images/logo.png"/>
-			</center>
+			<h1>Job Genie<img src="images/logo.png"/></h1>
 		</div>
 	<div data-role="content">
 		<div data-role="fieldcontain">	
 			<div id="underimage">
-				<center></center>	
+				<center>
 					<img src="images/under.png" border="0" />
 				</center>	
 			</div>
@@ -263,7 +257,7 @@
 	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script src="js/json.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 	
