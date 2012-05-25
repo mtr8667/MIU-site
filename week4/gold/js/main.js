@@ -9,8 +9,8 @@ var parseProjectForm = function(data){
 	console.log(data);
 };
 
-//$(document).ready(function(){
-$(document).bind('pageinit',function(){
+$(document).ready(function(){
+
 	
 	var 	projectform = $( "#projectform" ),
 			formerrorslink = $("#formerrorslink")
