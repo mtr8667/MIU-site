@@ -8,3 +8,49 @@ Matthew Richter
 label.error {display: block; margin: 10px 0; color:red;}
 
 #formerrorslink {display:none;}
+
+div#home { 
+background: -moz-linear-gradient(top, #fbf8e9 0%, #fff6d0 50%, #fbf8e9 100%, #fbf8e9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf8e9), color-stop(50%,#fff6d0), color-stop(100%,#fbf8e9), color-stop(100%,#fbf8e9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* IE10+ */
+background: linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* W3C */
+background-size: 480px 1600px;
+}
+div#feedback { 
+background: -moz-linear-gradient(top, #fbf8e9 0%, #fff6d0 50%, #fbf8e9 100%, #fbf8e9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf8e9), color-stop(50%,#fff6d0), color-stop(100%,#fbf8e9), color-stop(100%,#fbf8e9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* IE10+ */
+background: linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* W3C */
+background-size: 480px 1600px;
+}
+div#newproject { 
+background: -moz-linear-gradient(top, #fbf8e9 0%, #fff6d0 80%, #fbf8e9 100%, #fbf8e9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf8e9), color-stop(80%,#fff6d0), color-stop(100%,#fbf8e9), color-stop(100%,#fbf8e9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbf8e9 0%,#fff6d0 80%,#fbf8e9 100%,#fbf8e9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbf8e9 0%,#fff6d0 80%,#fbf8e9 100%,#fbf8e9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbf8e9 0%,#fff6d0 80%,#fbf8e9 100%,#fbf8e9 100%); /* IE10+ */
+background: linear-gradient(top, #fbf8e9 0%,#fff6d0 80%,#fbf8e9 100%,#fbf8e9 100%); /* W3C */
+background-size: 480px 1600px;
+}
+div#jobreporting { 
+background: -moz-linear-gradient(top, #fbf8e9 0%, #fff6d0 50%, #fbf8e9 100%, #fbf8e9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf8e9), color-stop(50%,#fff6d0), color-stop(100%,#fbf8e9), color-stop(100%,#fbf8e9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* IE10+ */
+background: linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* W3C */
+background-size: 480px 1600px;
+}
+div#additions { 
+background: -moz-linear-gradient(top, #fbf8e9 0%, #fff6d0 50%, #fbf8e9 100%, #fbf8e9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf8e9), color-stop(50%,#fff6d0), color-stop(100%,#fbf8e9), color-stop(100%,#fbf8e9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* IE10+ */
+background: linear-gradient(top, #fbf8e9 0%,#fff6d0 50%,#fbf8e9 100%,#fbf8e9 100%); /* W3C */
+background-size: 480px 1600px;
+}
