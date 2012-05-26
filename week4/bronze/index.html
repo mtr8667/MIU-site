@@ -32,16 +32,16 @@
 </head>
 <body>
 	<!-- home page -->
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-transition="fade">
 		<!-- home page Header -->
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
-		<div data-role="content">
+	
 			<a href="addProject.html" data-ajax="false">
-				<img src="images/cta3.png"/>
+				<img src="images/cta3.jpg"/>
 			</a>	
-		</div>
+	
 		<!-- home page thumb nail grid -->
 		<div data-role="content">	
 			
@@ -179,7 +179,7 @@
 	
 	</div>	
 	<!-- tips (news stream) page -->
-	<div data-role="page" id="tips" data-add-back-btn="true">
+	<div data-role="page" id="tips" data-add-back-btn="true" data-transition="fade">
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
 		</div>
@@ -237,18 +237,14 @@
 		</div>
 	</div>
 	
-	<div data-role="page" id="underconstruction" data-add-back-btn="true">
+	<div data-role="page" id="underconstruction" data-add-back-btn="true" data-transition="fade">
 		<div data-role="header" data-position="fixed">
 			<h1>Job Genie</h1>
-		</div>
-		<div data-role="content">
-			<div data-role="fieldcontain">	
-				<div id="underimage">
-					<center>
-						<img src="images/under.png" border="0" />
-					</center>	
-				</div>
-			</div>
+		</div>	
+		<div id="underimage">
+			<center>
+				<img src="images/under.png" border="0" />
+			</center>	
 		</div>
 		<div>
 			<center>
