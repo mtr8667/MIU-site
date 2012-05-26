@@ -29,7 +29,7 @@ div#back {
 	margin: 0px 0px 2px 215px;
 }
 nav {
-	margin: 1px 126px 1px 10px;
+	margin: 1px 10px 1px 10px;
 }
 p{
 	color:#848484 ;
@@ -58,7 +58,7 @@ form span{
 	font-size: 14px;
 	text-shadow: 2px 2px #ffffff;
 	color: #1bb849;
-	padding: 0px 0px 0px 156px;
+	padding: 0px 0px 0px 10px;
 }
 ul {
 	list-style-type: none;
